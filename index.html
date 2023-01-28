@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }h1{
+            font-size: 100px;
+        }h2{ font-size: 50px;}
+
+        html {
+            padding: 3rem;
+            background-color: #212123;
+            color: #EFEFEF;
+        }
+
+        .conteudo {
+            top: 50%;
+            display: flex;
+            width: 350px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 20px;
+        }
+
+        .card {
+            margin-top: 1000px;
+            flex: 0 0 100%;
+            padding: 30px;
+            scroll-snap-align: start;
+            border-radius: 30px;
+        }
+
+        .card h1 {
+            margin-bottom: 2rem;
+        }
+
+        .card:nth-child(1) {
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+        }
+
+        .card:nth-child(2) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+
+        .card:nth-child(3) {
+            background: linear-gradient(-229deg, #50d990, #d4d054); 
+        }
+
+        .card:nth-child(4) {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+        }
+
+        .card:nth-child(5) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(6) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(7) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(8) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(9) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(10) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(11) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(12) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(13) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(14) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(15) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        @media  screen and (max-width:320px) {
+            * {
+            font-family: 'Times New Roman', Times, serif;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            letter-spacing: 0px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+            margin: 0;
+        }h1{
+            font-size: 30px;
+        }h2{ font-size: 20px;}
+
+        html {
+            padding: 3rem;
+            background-color: #212123;
+            color: #EFEFEF;
+        }
+
+        .conteudo {
+            display: flex;
+            width: 150px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 25px;
+            column-gap: 20px;
+        }
+
+        .card {
+            margin-top: 70px;
+            flex: 0 0 100%;
+            padding: 30px;
+            scroll-snap-align: start;
+            border-radius: 30px;
+        }
+
+        .card h1 {
+            margin-bottom: 2rem;
+        }
+
+        .card:nth-child(1) {
+            background: linear-gradient(-229deg, #00DBDE, #FC00FF);
+        }
+
+        .card:nth-child(2) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+
+        .card:nth-child(3) {
+            background: linear-gradient(-229deg, #50d990, #d4d054); 
+        }
+
+        .card:nth-child(4) {
+            background: linear-gradient(-229deg, #D9AFD9, #97D9E1);
+        }
+
+        .card:nth-child(5) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(6) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(7) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(8) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(9) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(10) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(11) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(12) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        .card:nth-child(13) {
+            background: linear-gradient(-229deg, #50d990, #d4d054);
+        }
+        .card:nth-child(14) {
+            background: linear-gradient(-229deg, #FBAB7E, #F7CE68);
+        }
+        .card:nth-child(15) {
+            background: linear-gradient(-229deg, #0093E9, #80D0C7);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <span style="color: #00DBDE;font-size: 30px;">Family means a lot highs lows are guared and they will stand with us.</span>
+    <main class="conteudo">
+        <article class="card">
+            <h1>VENKTAPPA</h1>
+            <h2>Grand father</h2>
+           </article>
+        <article class="card">
+            <h1>MUNI VENKTAMMA</h1>
+            <h2>Grand mother</h2>
+           </article>
+           <article class="card">
+            <h1>CHANDAN V N</h1>
+           </article>
+           <article class="card">
+            <h1>BHARTHI V</h1>
+            <h2>Mother</h2>
+           </article>
+           <article class="card">
+            <h1>NAGRAJ V</h1>
+            <h2>Father</h2>
+           </article>
+           <article class="card">
+            <h1>PRAKASH V</h1>
+            <h2>Father</h2>
+           </article>
+           <article class="card">
+            <h1>KOMALA</h1>
+            <h2>Mother</h2>
+           </article>
+           <article class="card">
+            <h1>MADHU</h1>
+           </article>
+           <article class="card">
+            <h1>SRIDHAR</h1>
+            <h2>Father</h2>
+           </article>
+           <article class="card">
+            <h1>MALLIKA</h1>
+            <h2>Mother</h2>
+           </article>
+           <article class="card">
+            <h1>CHESHWIKA</h1>
+           </article>
+           <article class="card">
+            <h1>NAVEEN</h1>
+            <h2>Father</h2>
+           </article>
+           <article class="card">
+            <h1>SUSHMA</h1>
+            <h2>Mother</h2>
+           </article>
+           <article class="card">
+            <h1>BHANVI</h1>
+           </article>
+           <article class="card">
+            <h1>NANDHAN</h1>
+           </article>
+    </main>
+</body>
+</html>
